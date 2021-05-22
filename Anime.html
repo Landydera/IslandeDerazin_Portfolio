@@ -93,7 +93,7 @@ position: absolute;
  
 		var left =0;
 		var stepNum = 1;
-		var stepSound = new Audio('shoe-footstep.mp3');
+		var stepSound = new Audio('Folder/shoe-footstep.mp3');
 		stepNum.volume = .5;
 		var title = document.getElementById('title');
 
@@ -112,7 +112,7 @@ position: absolute;
 
 			}
 			title.style.left = left + 'px';
-			title.src = 'tile_'+stepNum+'.gif';
+			title.src = 'Folder/tile_'+stepNum+'.gif';
 			stepNum = stepNum + 1;
 			
 			setTimeout(move_title, 100);
