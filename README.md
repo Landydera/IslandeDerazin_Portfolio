@@ -6,7 +6,7 @@
    [Source Code](https://github.com/Landydera/CISC3610_FruitChart).\
 3) [Notes](https://landydera.github.io/CISC3610_LabNotes/note.html).\
    [Source Code](https://github.com/Landydera/CISC3610_LabNotes).\
-4) [Vide Lab](https://landydera.github.io/VideoLab/video.html).\
+4) [Video Lab](https://landydera.github.io/VideoLab/video.html).\
    [Source Code](https://github.com/Landydera/VideoLab/blob/main/video.html).
 
 
