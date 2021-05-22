@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>JS Animation  </title>
+
+
+</head>
+
+<body>
+
+
+<hr>
+<h1> Animation/ Double Click on the person </h1>
+
+
+
+<image src = "entrance.png" id = "entrance">
+
+<image src = "tile_1.gif" id ="title" onclick = "move_title()">
+<div class="speech-bubble">
+<div class="arrow bottom right"></div>
+I am the new Realtor and this house will be a perfect fit for someone looking for a fresh start!!
+</div>
+
+<style>
+
+$arrow-outside-color: #c8c8c8;
+$arrow-inside-color: #f8f8f8;
+$arrow-outside-showing-border: 8px solid transparent;
+$arrow-inside-showing-border: 7px solid transparent;
+
+#message{
+	position: absolute;
+	background-color: red;	
+
+
+}
+
+#title {
+	position: absolute;
+	top: 220px;
+	left: 0;
+
+} 
+#entrance{
+	position: absolute;
+	top: 85px;
+	left:5px;
+
+} 
+
+.speech-bubble {
+background-color: #f8f8f8;
+border: 1px solid #c8c8c8;
+border-radius: 5px;
+width: 110px;
+text-align: center;
+padding: 20px;
+position: absolute;
+
+.arrow-bottom {
+width: 0;
+height: 0;
+border-top: 8px solid $arrow-outside-color;
+border-left: $arrow-outside-showing-border;
+border-right: $arrow-outside-showing-border;
+bottom: -8px;
+position: absolute;
+}
+
+.arrow-bottom:after {
+border-top: 7px solid $arrow-inside-color;
+border-left: $arrow-inside-showing-border;
+border-right: $arrow-inside-showing-border;
+left: -7px;
+bottom: 1px;
+content: "";
+position: absolute;
+}
+
+
+}
+
+
+
+
+
+</style>
+
+	<script>
+ 
+		var left =0;
+		var stepNum = 1;
+		var stepSound = new Audio('shoe-footstep.mp3');
+		stepNum.volume = .5;
+		var title = document.getElementById('title');
+
+		var move_title = function() {
+
+			
+			if(stepNum>24) {
+				stepNum = 1;
+			}
+			if(stepNum >0){
+
+
+				console.log(stepSound.currentTime);
+				stepSound.play();
+			
+
+			}
+			title.style.left = left + 'px';
+			title.src = 'tile_'+stepNum+'.gif';
+			stepNum = stepNum + 1;
+			
+			setTimeout(move_title, 100);
+
+		}
+
+
+	</script>
+
+</body>
+
+</html>
+
+
+
