@@ -1,0 +1,115 @@
+<!--Islande Derazin-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+
+
+</head>
+
+
+<body>
+
+<hr>
+<h1> Click on a button to play a sound. </h1>
+
+
+
+<audio id="classic">
+  <source src="classic.m4a" type="audio/ogg">
+
+</audio>
+
+
+
+<audio id="country">
+  <source src="country-song.wav" type="audio/ogg">
+</audio>
+
+<audio id="jazz">
+  <source src="jazz-piano-intro.wav" type="audio/ogg">
+</audio>
+
+<audio id="reggae">
+  <source src="reggae.wav" type="audio/ogg">
+</audio>
+
+<audio id="zouk">
+  <source src="zouk.wav" type="audio/ogg">
+</audio>
+
+
+
+
+<button style="background-color:green" onclick="playAudio()" type="button"><b>Listen to Classic</b></button>
+<button style="background-color:lightgreen" onclick="pauseAudio()" type="button"><b>Pause Classic</b></button><br> 
+
+<button style="background-color:darkred" onclick="playAudio2()" type="button"><b>Listen to Country</b></button>
+<button style="background-color:red" onclick="pauseAudio2()" type="button"><b>Pause Country</b></button><br>
+
+<button style="background-color:blue" onclick="playAudio3()" type="button"><b>Listen to Jazz</b></button>
+<button style="background-color:lightblue" onclick="pauseAudio3()" type="button"><b>Pause Jazz</b></button><br>
+
+<button style="background-color:orange" onclick="playAudio4()" type="button"><b>Listen to Reggae</b></button>
+<button style="background-color:yellow" onclick="pauseAudio4()" type="button"><b>Pause Reggae</b></button><br>
+
+<button style="background-color:saddlebrown" onclick="playAudio5()" type="button"><b>Listen to Zouck</b></button>
+<button style="background-color:tan" onclick="pauseAudio5()" type="button"><b>Pause Zouck</b></button><br>
+
+<script>
+
+
+
+
+
+var classic = document.getElementById("classic"); 
+var country = document.getElementById("country");
+var jazz = document.getElementById("jazz");
+var reggae = document.getElementById("reggae");
+var zouck = document.getElementById("zouck"); 
+
+function playAudio() { 
+  classic.play(); 
+}
+
+function playAudio2() { 
+  country.play(); 
+} 
+
+function playAudio3() { 
+  jazz.play(); 
+}
+
+function playAudio4() { 
+  reggae.play(); 
+}
+
+function playAudio5() { 
+  zouk.play(); 
+}
+
+function pauseAudio() { 
+  classic.pause(); 
+} 
+
+function pauseAudio2() { 
+  country.pause(); 
+}
+
+function pauseAudio3() { 
+  jazz.pause(); 
+}
+
+function pauseAudio4() { 
+  reggae.pause(); 
+}
+
+function pauseAudio5() { 
+  zouk.pause(); 
+}
+</script>
+
+</body>
+</html>
