@@ -7,7 +7,7 @@
 3) [Notes](https://landydera.github.io/CISC3610_LabNotes/note.html).\
    [Source Code](https://github.com/Landydera/CISC3610_LabNotes).\
 4) [Video Lab](https://landydera.github.io/VideoLab/video.html).\
-   [Source Code](https://github.com/Landydera/VideoLab/blob/main/video.html).  
+   [Source Code](https://github.com/Landydera/VideoLab/blob/main/video.html).\
 4) [Animation](https://landydera.github.io/IslandeDerazin_Portfolio/Anime.html).\
    [Source Code](https://github.com/Landydera/IslandeDerazin_Portfolio).
    
