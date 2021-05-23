@@ -8,7 +8,11 @@
    [Source Code](https://github.com/Landydera/CISC3610_LabNotes).\
 4) [Video Lab](https://landydera.github.io/VideoLab/video.html).\
    [Source Code](https://github.com/Landydera/VideoLab/blob/main/video.html).\
-4) [Animation](https://landydera.github.io/IslandeDerazin_Portfolio/Anime.html).\
+5) [Animation](https://landydera.github.io/IslandeDerazin_Portfolio/Anime.html).\
+   [Source Code](https://github.com/Landydera/IslandeDerazin_Portfolio).\
+6) [Data Visualization](https://landydera.github.io/IslandeDerazin_Portfolio/dataVisual.html).\
+   [Source Code](https://github.com/Landydera/IslandeDerazin_Portfolio).
+7) [Audio Lab](https://landydera.github.io/IslandeDerazin_Portfolio/dataVisual.html).\
    [Source Code](https://github.com/Landydera/IslandeDerazin_Portfolio).
    
  
