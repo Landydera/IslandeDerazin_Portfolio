@@ -12,7 +12,7 @@
    [Source Code](https://github.com/Landydera/IslandeDerazin_Portfolio).\
 6) [Data Visualization](https://landydera.github.io/IslandeDerazin_Portfolio/dataVisual.html).\
    [Source Code](https://github.com/Landydera/IslandeDerazin_Portfolio).\
-7) [Audio Lab](https://landydera.github.io/IslandeDerazin_Portfolio/dataVisual.html).\
+7) [Audio Lab](https://landydera.github.io/IslandeDerazin_Portfolio/audio.html).\
    [Source Code](https://github.com/Landydera/IslandeDerazin_Portfolio).
    
  
