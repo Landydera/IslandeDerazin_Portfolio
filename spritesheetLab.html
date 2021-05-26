@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+
+<meta charset="UTF-8">
+    
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Count </title>
+
+</head>
+
+<body>
+
+
+
+<hr>
+<h1> Count from 0-10 </h1>
+
+
+<image src = "num1.png" id ="num">
+
+
+<canvas id="myCanvas" width="300" height="200"></canvas>
+</canvas>
+<button style="background-color:green" onclick="count()" type="button"><b>Sart</b></button>
+
+
+<style>
+
+
+</style>
+
+	<script>
+ 
+		var left =0;
+		var countNum = 1;
+
+		var num = document.getElementById('num');
+
+		var count = function() {
+
+			
+			if(countNum>10) {
+				countNum = 1;
+			
+				}
+
+				num.style.left = left + 'px';
+				num.src = 'num'+countNum+'.png';
+				countNum = countNum + 1;
+			
+
+			
+
+			setTimeout(count, 200);
+
+		}
+
+
+	</script>
+
+</body>
+
+</html>
+
+
+
