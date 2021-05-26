@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Audio Project</title>
 </head>
 <body>
     <p>This is the list of some CUNY schools. Say the name of one of those colllges to see a picture</p>
@@ -15,7 +15,7 @@
     </ul
     <p>Say "Help" for help</p>
     <p>Say "About" to hear creator</p>
-    <button id='clickButton'>Speak!</button>
+    <button id='btnGiveCommand'>Speak!</button>
     <br><br>
     <span id='message'></span>
     <br><br>
@@ -76,7 +76,7 @@
             message.textContent = 'Error occurred in recognition: ' + event.error;
         }        
 
-        document.querySelector('#clickButton').addEventListener('click', function(){
+        document.querySelector('#btnGiveCommand').addEventListener('click', function(){
             recognition.start();
 
         });
