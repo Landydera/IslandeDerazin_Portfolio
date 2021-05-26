@@ -15,7 +15,9 @@
 7) [Audio Lab](https://landydera.github.io/IslandeDerazin_Portfolio/audio.html).\
    [Source Code](https://github.com/Landydera/IslandeDerazin_Portfolio).\
 8) [Sprite Sheets Lab](https://landydera.github.io/IslandeDerazin_Portfolio/spritesheetLab.html).\
-   [Source Code](https://github.com/Landydera/IslandeDerazin_Portfolio/blob/main/spritesheetLab.html).
+   [Source Code](https://github.com/Landydera/IslandeDerazin_Portfolio/blob/main/spritesheetLab.html).\
+9) [Audio Project](https://landydera.github.io/IslandeDerazin_Portfolio/Audio_Project.html).\
+   [Source Code](https://github.com/Landydera/IslandeDerazin_Portfolio/blob/main/Audio_Project.html).
  
 
 
