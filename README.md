@@ -18,6 +18,6 @@
    [Source Code](https://github.com/Landydera/IslandeDerazin_Portfolio/blob/main/spritesheetLab.html).\
 9) [Audio Project](https://landydera.github.io/IslandeDerazin_Portfolio/Audio_Project.html).\
    [Source Code](https://github.com/Landydera/IslandeDerazin_Portfolio/blob/main/Audio_Project.html).
- 
-
-
+10) [Resume Lab](https://landydera.github.io/IslandeDerazin_Portfolio/Resume%20Lab/resume.html).\
+   [Source Code](https://github.com/Landydera/IslandeDerazin_Portfolio/tree/main/Resume%20Lab).
+   
