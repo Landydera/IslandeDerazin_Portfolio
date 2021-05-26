@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p>This is the list of some CUNY schools. Say the name of one of those colllges to see a picture</p>
+    <ul>
+    <li>Brooklyn College</li>
+    <li>Baruch College</li>
+    <li>City college</li>
+    </ul
+    <p>Say "Help" for help</p>
+    <p>Say "About" to hear creator</p>
+    <button id='clickButton'>Speak!</button>
+    <br><br>
+    <span id='message'></span>
+    <br><br>
+    
+
+    <script>
+        var message = document.querySelector('#message');
+
+        var SpeechRecognition = SpeechRecognition || webkitSpeechRecognition;
+        var SpeechGrammarList = SpeechGrammarList || webkitSpeechGrammarList;
+
+        var grammar = '#JSGF V1.0;'
+
+        <image src = "schoolImage.jpg" id ="bc">
+        <image src = "baruch.png" id ="baruch">
+        <image src = "city.png" id ="city">
+
+
+        var recognition = new SpeechRecognition();
+        var speechRecognitionList = new SpeechGrammarList();
+        speechRecognitionList.addFromString(grammar, 1);
+        recognition.grammars = speechRecognitionList;
+        recognition.lang = 'en-US';
+        recognition.interimResults = false;
+
+        recognition.onresult = function(event) {
+            var last = event.results.length - 1;
+            var command = event.results[last][0].transcript;
+            message.textContent = 'Voice Input: ' + command + '.';
+
+            if(command.toLowerCase() === 'Brooklyn College'){
+                ctx.displayImage(bc,30,30);
+            }
+            else if (command.toLowerCase() === 'Baruch College '){
+                ctx.displayImage(baruch,30,30);
+            }
+            else if (command.toLowerCase() === 'Cty College'){
+                ctx.displayImage(city,30,30);
+            }
+
+            else if (command.toLowerCase() === 'help'){
+                var msg = new SpeechSynthesisUtterance();
+                msg.text = "Please, say the name of one of these CUNY schools to see a picture:";
+                window.speechSynthesis.speak(msg);
+            }
+            else if (command.toLowerCase() === 'about'){
+                var msg = new SpeechSynthesisUtterance();
+                msg.text = "The author is Islande Derazin. I referred to differnt online resources to complete this project .";
+                window.speechSynthesis.speak(msg);
+            }   
+        };
+
+        recognition.onspeechend = function() {
+            recognition.stop();
+        };
+
+        recognition.onerror = function(event) {
+            message.textContent = 'Error occurred in recognition: ' + event.error;
+        }        
+
+        document.querySelector('#clickButton').addEventListener('click', function(){
+            recognition.start();
+
+        });
+
+
+    </script>
+</body>
